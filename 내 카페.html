@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+    <head>
+    <title>cafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="D:\카페\fontello-d0763088\fontello-d0763088\css\fontello.css">
+    <style>
+        /*주석*/
+
+        *{box-sizing:border-box;}
+
+        body{font-family:"fontello";}
+        
+
+        body{background-image: url('.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-color:rgb(245, 237, 245);
+             border-top:5px solid black;
+            }
+        a{
+            text-decoration: none;
+        }  
+
+        #로고{position: relative;
+             margin:10px;
+             float:left;}
+
+             
+             
+
+        li{color:rgb(153, 113, 148);}
+
+        #a{font-size:1rem}
+        .b{font-size:1rem}
+
+        #선택창1{border:3px solid rgb(180, 152, 206);
+        background-color: rgb(238, 218, 238);
+        display: inline;
+        text-align: center;
+        padding: 10px;
+        margin:10px;
+        }
+
+        #선택창2{border:3px solid rgb(180, 152, 206);
+        background-color: rgb(245, 191, 245);
+        display: inline;
+        text-align: center;
+        float:right;
+        position:fixed;
+        top:0;
+        right:0;
+        height:100%;
+        margin:10px;
+        margin-top:20px;
+        }
+
+        a:link{color:black;}
+        a:visited{color:slateblue;}
+        a:hover{color:rosybrown;}
+        a:active{color:gold;}
+        a:focus{color:white;}
+
+        #본문
+        {
+           /* text-align: justify; */
+           color:rgb(15, 20, 9);
+           border:10px solid rgb(236, 152, 152);
+           font-family:  "helvetica neue", serif, monospace;
+           font-weight: bold;
+           line-height: 1.5;
+           padding:40px;
+           margin:10px;
+           margin-right:200px;   
+           column-count:3;   
+           /*column-rule-style: dotted;*/   
+           column-rule-width:1px;
+           column-rule-color:red;
+        }
+    
+        html{color:rgb(158, 149, 149);}
+        /*모든값*/
+
+        .container{display:flex;
+                   /* flex-direction:row-reverse;  */
+        }
+        .item{background-color: tomato;
+              color:white;
+              border:1px solid rgb(245, 191, 245);
+              /* flex-grow:1; */
+            }
+
+        /*.item:nth-child(2){flex-basis: 200px;
+                           flex-shrink:1;}*/
+
+        #본문 div{column-span: all;
+        text-align:center;}
+    </style>
+    </head>
+    <body>   
+    <header>
+        <a href="내 카페.html" id="로고";>
+        <img src="d:/카페/로고.png" width=100; height=100; alt="로고">
+    </a>
+    </header>
+        <br><br>
+        <nav>
+        <p id="선택창1">
+        <a href="메뉴.html">&#xe800메뉴</a>
+        &nbsp;
+        <a href="커피.html">&#xe800커피</a>
+        &nbsp;
+        <a href="로그인.html">&#xe800로그인</a>
+        &nbsp;
+        <a href="내 카페.html">&#xe800홈</a>
+        </p>
+        </nav>
+
+         <p id="선택창2">
+            <a href="메뉴.html">메뉴</a>
+            <br><br>
+            <a href="커피.html">커피</a>
+            <br><br>
+            <a href="로그인.html">로그인</a>
+            <br><br>
+            <a href="내 카페.html">홈</a>
+            </p> 
+        
+        
+        <br><br><br>
+        <article>
+         <h2 id="본문"><div>123</div><img src="아메리카노.jpg" width="150"
+            alt="아메리카노" 
+           title="123"><img src="아메리카노.jpg" width="150"
+           alt="아메리카노"
+          title="123"><img src="아메리카노.jpg" width="150"
+          alt="아메리카노"
+         title="123"><img src="아메리카노.jpg" width="150"
+         alt="아메리카노"
+        title="123"><img src="아메리카노.jpg" width="150"
+        alt="아메리카노"
+       title="123"><img src="아메리카노.jpg" width="150"
+       alt="아메리카노"
+      title="123"><img src="아메리카노.jpg" width="150"
+      alt="아메리카노"
+     title="123"><img src="아메리카노.jpg" width="150"
+     alt="아메리카노"
+    title="123"><img src="아메리카노.jpg" width="150"
+    alt="아메리카노"
+   title="123">
+           <div>123</div> 
+            
+        
+        </h2>  
+         <h2 id="a">본문2</h2>
+         <h2 class="b">본문3</h2>
+         <h1 class="b">본문4</h2>
+
+         <div class="container">
+             <div class="item">1</div>
+             <div class="item">2</div>
+             <div class="item">3</div>
+             <div class="item">4</div>
+             <div class="item">5</div>
+
+         </div>
+        </article>
+        <footer>
+         <ul>
+          <li><a href="">개인보호정책</a></li>
+          <li><a href="">회사소개</a></li>   
+         </ul>  
+        </footer>
+    </body>
+</html>
