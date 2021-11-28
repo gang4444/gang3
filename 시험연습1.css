@@ -1,0 +1,6 @@
+*{ margin: 0; padding: 0; font-size: 1rem; text-decoration: none; list-style: none;}
+a:visited{color:black;}
+#b{ margin: 0 auto; } 
+#slide3{ height: 300px; position:absolute; left:0;}
+ #slide3>ul>li{position:absolute; font-size: 0;}
+

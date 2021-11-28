@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="시험연습1.css" type="text/css" rel="stylesheet">
+    <script src="시험연습1.js" defer="defer" type="text/javascript"></script>
+
+<style>
+#a{
+    width:1000px;
+    height:150px;
+}
+#a>a{
+    margin:50px;
+    float:right;
+    }
+
+#b{
+    width:1000px;
+    height:350px;
+}
+#c{
+    width:1000px;
+    height:500px;
+display:block;
+}
+#d{
+
+    float:left;
+    width:50%;
+    height:150px;
+    
+}
+#d>ul{padding:20px;
+      padding-top:10px;
+    }
+#d>ul>li{padding:5px;
+        border-bottom:1px solid black;
+        
+    }
+#e{
+    text-align:center;
+    float:left;
+    width:50%;
+    height:150px;
+    
+}
+#f{
+    
+    height:100px;
+    clear:both;
+    text-align:center;
+}
+#f>img{
+    margin-left:100px;
+    margin-right:100px;
+    }
+#f1{
+width:33%;
+height:350;
+float:left;}
+#f2{
+width:33%;
+height:350;
+float:left;}
+#f3{
+width:33%;
+height:350;
+float:left;}
+.f11{width:150px;
+margin-top:30px;
+margin-left:90px;
+margin-right:90px;
+font-size:12px;}
+#g{ 
+    width:1000px;
+    height:100px;
+    background-color:blanchedalmond;
+    color:black;
+    
+}
+#g1{width:50%;
+height:100px;
+float:left;}
+#g2{width:50%;
+    height:100px;
+    float:left;
+}
+#g11{margin:8px;
+    font-size:12px;}
+
+#g21{margin:8px;}
+
+#g21>a{font-size:12px;}
+
+#z{
+    width:1000px;
+    height:106px;
+    background-color: blanchedalmond;}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*body 초기화*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", serif;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;  
+}
+
+nav {
+  z-index: 1;
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background:blanchedalmond ;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main-menu > li {
+  float: left;
+  position: relative;
+}
+
+#main-menu > li > a {
+  font-size: 0.85rem;
+  color:black;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  display: block;
+  padding: 14px 36px;
+  border-right: 1px solid rgba(0,0,0,0.15);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+#main-menu > li:nth-child(1) > a {
+  border-left: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu {
+  position: absolute;
+  background: #182952;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.15s ease-in;
+}
+
+#sub-menu > li {
+  padding: 16px 28px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+#sub-menu > li >  a {
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+}
+
+#main-menu > li:hover #sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+#sub-menu > li >  a:hover {
+ text-decoration: underline;
+}
+
+section {
+  column-width: 15em;
+  background: #dadadf;
+  padding: 2em 12em;
+}
+
+</style>
+</head>
+<body>
+<script>
+</script>
+<div id="z">
+</div>
+<nav role="navigation">
+  <ul id="main-menu">
+    <li><a href="#">MENU1</a></li>
+    <li><a href="#">MENU2</a>
+      <ul id="sub-menu">
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+      </ul>
+    </li>
+    <li><a href="#">MENU3</a>
+      <ul id="sub-menu">
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+      </ul>
+    </li>
+    <li><a href="#">MENU4</a>
+      <ul id="sub-menu">
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+      </ul>
+    </li>
+    <li><a href="#">MENU5</a></li>
+    <li><a href="#">MENU6</a></li>
+  </ul>
+</nav>
+<div id="b"> <div id="header3"></div>
+ <div id="slide3"> 
+     <ul> 
+     <li><a href="#"><img src="심플 배경.jpg" alt="슬라이드7" width="1000px" height="350px"></a></li>
+     <li><a href="#"><img src="아메리카노1.jpg" alt="슬라이드8" width="1000px" height="350px"></a></li> 
+     <li><a href="#"><img src="카페라떼.jpg" alt="슬라이드9" width="1000px" height="350px"></a></li>
+     </ul> 
+    </div> 
+ </div>
+</div>
+<div id="c">
+<div id="d">
+    <ul>
+    <li><a href="">Don't dwell on the past.</a></li>
+    <li><a href="">Believe in yourself.</a></li>
+    <li><a href="">Follow yout heart.</a></li>
+    <li><a href="">Seize the day.</a></li>
+</ul>
+</div>
+<div id="e">
+    Web Partnrt Site<br>
+    <img src="카페라떼.jpg" width="300px;"height="120px;">
+</div>
+<div id="f">
+<div id="f1">
+    <img src="심플 배경.jpg" width="75px;" height="75px;"><br>
+<div class="f11">
+    Miracles happen to only those who believe in them.
+    Think like a man of action and act like man of thought.
+</div>
+</div>
+<div id="f2">
+    <img src="심플 배경.jpg" width="75px;" height="75px;"><br>
+    <div class="f11">
+    Life is the art of drawing sufficient conclusions from insufficient premises.
+</div>
+</div>
+<div id="f3">
+    <img src="심플 배경.jpg" width="75px;" height="75px;"><br>
+    <div class="f11">
+    By doubting we come at the truth.
+    A man that has no virtue in himself, ever envies virtue in others.
+</div>
+</div>
+</div>
+</div>
+<div id="g">
+    <div id="g1">
+        <div id="g11">
+banana apple strawberry
+        </div>
+    </div>
+    <div id="g2">
+        <div id="g21">
+    <a href="로그인.html">When money speaks, the truth keeps silent.</a><br>
+    <a href="로그인.html">Better the last smile than the first laughter.</a><br>
+    <a href="로그인.html">Painless poverty is better than embittered wealth.</a><br>
+    <a href="로그인.html">A poet is the painter of the soul.</a><br>
+         </div>
+    </div>
+</div>
+</body>
+</html>
